@@ -22,7 +22,6 @@ public class RulerView extends View {
      * 刻度尺高度
      */
     private int height = 200;
-
     private int divideWidth = 15;
     private int divideHeightIndex = 100;
     private int divideHeight = 50;

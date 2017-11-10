@@ -19,8 +19,9 @@ public class MainActivity extends AppCompatActivity {
     private List<PageModel> pageModels = new ArrayList<>();
 
     {
-        pageModels.add(new PageModel(R.string.title_one, R.layout.one));
-        pageModels.add(new PageModel(R.string.title_two, R.layout.two));
+        pageModels.add(new PageModel(R.string.title_one, R.layout.fragment_ruler));
+        pageModels.add(new PageModel(R.string.title_two, R.layout.fragment_scale));
+        pageModels.add(new PageModel(R.string.title_three, R.layout.fragment_rotare));
     }
 
     @Override
