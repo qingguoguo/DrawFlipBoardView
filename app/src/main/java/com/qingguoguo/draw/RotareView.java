@@ -83,12 +83,10 @@ public class RotareView extends View {
         if (i >= 90 && i <= 270) {
             //刻度3 9需要旋转-90度 90度，45678旋转180度 关键是找到文字的中心
             canvas.save();
-            canvas.rotate((i == 90 ? -90 : (i == 270 ? 90 : 180)), getWidth() / 2,
-                    getHeight() / 2 - getWidth() / 2 + 60 + (mBound.bottom - mBound.top) / 2);
+            canvas.rotate((i == 90 ? -90 : (i == 270 ? 90 : 180)), getWidth() / 2, getHeight() / 2 - getWidth() / 2 + 60 + (mBound.bottom - mBound.top) / 2);
 
             //绘制文字
-            canvas.drawText(String.valueOf(hour), getWidth() / 2 - mPaint.measureText(String.valueOf(hour)) / 2,
-                    getHeight() / 2 - getWidth() / 2 + 60 + (mBound.bottom - mBound.top) / 2, mPaint);
+            canvas.drawText(String.valueOf(hour), getWidth() / 2 - mPaint.measureText(String.valueOf(hour)) / 2, getHeight() / 2 - getWidth() / 2 + 60 + (mBound.bottom - mBound.top) / 2, mPaint);
             canvas.restore();
         } else {
             //绘制文字
