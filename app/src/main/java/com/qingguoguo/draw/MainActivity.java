@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         pageModels.add(new PageModel(R.string.title_one, R.layout.fragment_ruler));
         pageModels.add(new PageModel(R.string.title_two, R.layout.fragment_scale));
         pageModels.add(new PageModel(R.string.title_three, R.layout.fragment_rotare));
+        pageModels.add(new PageModel(R.string.title_flipboard, R.layout.fragment_flipboard));
     }
 
     @Override

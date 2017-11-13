@@ -2,10 +2,12 @@ package com.qingguoguo.draw;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.view.MotionEvent;
 import android.view.View;
 
 /**
@@ -55,9 +57,10 @@ public class RulerView extends View {
         Rect rect = new Rect(left, getHeight() / 2 - height / 2, getWidth() - right, getHeight() / 2 + height / 2);
         canvas.drawRect(rect, mPaint);
 
+        canvas.save();
         //绘制刻度线
         int topy;
-        for (int i = 0; i < 61; i++) {
+        for (int i = 0; i < 100; i++) {
             if (i % 10 == 0) {
                 topy = divideHeightIndex;
                 //绘制数字
@@ -70,5 +73,17 @@ public class RulerView extends View {
             canvas.drawLine(left + divideWidth, getHeight() / 2 + height / 2, left + divideWidth, getHeight() / 2 + height / 2 - topy, mPaint);
             canvas.translate(divideWidth, 0);
         }
+        canvas.restore();
+
+        mPaint.setColor(Color.RED);
+        canvas.drawText("78.9 kg", getWidth() / 2, getHeight() / 2 + height, mPaint);
+        canvas.drawLine(getWidth() / 2, getHeight() / 2 + height / 2, getWidth() / 2, getHeight() / 2, mPaint);
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+
+
+        return super.onTouchEvent(event);
     }
 }

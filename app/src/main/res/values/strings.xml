@@ -3,4 +3,6 @@
     <string name="title_one">one</string>
     <string name="title_two">two</string>
     <string name="title_three">three</string>
+    <string name="title_flipboard">flipboard</string>
+    <string name="animate">animate</string>
 </resources>
