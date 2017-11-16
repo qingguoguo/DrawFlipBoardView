@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Draw</string>
+    <string name="app_name">DrawFlipBoardView</string>
     <string name="title_one">one</string>
     <string name="title_two">two</string>
     <string name="title_three">three</string>
