@@ -1,4 +1,4 @@
-package com.qingguoguo.draw;
+package com.qingguoguo.flipBoardView;
 
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
@@ -8,7 +8,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,10 +18,10 @@ public class MainActivity extends AppCompatActivity {
     private List<PageModel> pageModels = new ArrayList<>();
 
     {
+        pageModels.add(new PageModel(R.string.title_flipboard, R.layout.fragment_flipboard));
         pageModels.add(new PageModel(R.string.title_one, R.layout.fragment_ruler));
         pageModels.add(new PageModel(R.string.title_two, R.layout.fragment_scale));
         pageModels.add(new PageModel(R.string.title_three, R.layout.fragment_rotare));
-        pageModels.add(new PageModel(R.string.title_flipboard, R.layout.fragment_flipboard));
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.qingguoguo.draw;
+package com.qingguoguo.flipBoardView;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

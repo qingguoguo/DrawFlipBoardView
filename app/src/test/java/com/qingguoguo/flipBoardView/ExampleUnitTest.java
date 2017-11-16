@@ -1,4 +1,4 @@
-package com.qingguoguo.draw;
+package com.qingguoguo.flipBoardView;
 
 import org.junit.Test;
 
